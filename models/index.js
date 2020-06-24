@@ -22,9 +22,10 @@ fs
   })
   .forEach(file => {
     const model = sequelize['import'](path.join(__dirname, file));
+    console.log(model);
     db[model.name] = model;
   });
-
+console.log("Now: ", db )
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);

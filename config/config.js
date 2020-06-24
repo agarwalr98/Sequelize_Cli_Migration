@@ -9,7 +9,7 @@ module.exports = {
   // },
 
   development: {
-    database: 'sequelize_mysql',
+    database: 'sequelize_cli_Migration',  //default environment
     username: 'root',
     password: null,
     host: '127.0.0.1',

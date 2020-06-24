@@ -7,14 +7,14 @@ This repository contains basic steps to setup sequelize-cli for migrating your o
 * Install the following packages using npm:
 ```npm install sequelize -g
    npm install sequelize-cli -g
-   npm install dotenv path mysql
+   npm install dotenv path mysql                                                                        
 ```
 **Note:** Install the database which you want to use in your project.
 * Create a new directory in your project and navigate to it.
   ```mkdir src```
 * Run ```sequelize init```.
   **Note:** If sequelize is not installed globally on your system then run, 
-    ```node_modules/.bin/sequelize init```.
+    ```node_modules/.bin/sequelize init```.                                 
 * Create a ```.env``` file and change the variables according to your requirement.
 * Move Config/config.js file from this repo to src/config.
 * Copy .sequelizerc file into src directory and modify it.
